@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			li{list-style: none;}
+			html{height: 100%;}
+			body{height: 100%;}
+			#box{width: 200px;height: 200px;margin: 200px auto;transform-style: preserve-3d;/* transition: 2000s transform linear; */animation: na 10s linear infinite;}
+			#box ul{position: relative;}
+			#box ul li{width: 200px;height: 200px;opacity: 0.5;position: absolute;}
+			#box ul li:nth-of-type(1){background: red;transform: translateX(-100px) rotateY(90deg);}
+			#box ul li:nth-of-type(2){background: black;transform: translateX(100px) rotateY(-90deg);}
+			#box ul li:nth-of-type(3){background: blue;transform: translateY(-100px) rotateX(90deg);}
+			#box ul li:nth-of-type(4){background: yellow;transform: translateY(100px) rotateX(-90deg);}
+			#box ul li:nth-of-type(5){background: gray;transform: translateZ(-100px) }
+			#box ul li:nth-of-type(6){background: orange;transform: translateZ(100px) }
+			/* #box:hover{transform:rotateZ(36000deg) rotateX(36000deg) rotateY(36000deg);} */
+			@keyframes na{
+				0%{transform:rotateZ(0deg) rotateX(0deg) rotateY(0deg);}
+				100%{transform:rotateZ(360deg) rotateX(360deg) rotateY(360deg);}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</body>
+</html>
